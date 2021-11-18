@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="777.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cabinetapp.FXMLDocumentController">
+   <children>
+      <Label layoutX="44.0" layoutY="154.0" text="Login" />
+      <Label layoutX="22.0" layoutY="14.0" text="S'authentifier" textFill="#4a92f8">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="213.0" text="Password" />
+      <TextField fx:id="l" layoutX="115.0" layoutY="150.0" prefHeight="25.0" prefWidth="193.0" />
+      <PasswordField fx:id="p" layoutX="115.0" layoutY="209.0" prefHeight="25.0" prefWidth="193.0" />
+      <Button fx:id="btn" layoutX="154.0" layoutY="257.0" mnemonicParsing="false" onAction="#Connecter" prefHeight="34.0" prefWidth="115.0" text="Se Connecter" textFill="#011102" />
+      <Label fx:id="label" layoutX="115.0" layoutY="308.0" prefHeight="17.0" prefWidth="201.0" textFill="#f20000" />
+   </children>
+</AnchorPane>

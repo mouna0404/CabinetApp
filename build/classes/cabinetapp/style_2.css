@@ -1,0 +1,20 @@
+
+#xx
+{
+    -fx-background-image: url("acc.jpg");
+    -fx-background-repeat: stretch; 
+     -fx-background-size: 850 630;
+    -fx-background-position: center center;
+     
+}
+#bien
+{
+    -fx-font-size:60;
+    -fx-text-fill:#24AEEA;
+}
+
+#acc
+{
+    -fx-font-size:20;
+    
+}

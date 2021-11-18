@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1059.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cabinetapp.FXMGCMController">
+   <children>
+      <SplitPane dividerPositions="0.20245979186376536" layoutY="-2.0" prefHeight="687.0" prefWidth="1059.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="gu" layoutX="11.0" layoutY="332.0" mnemonicParsing="false" onAction="#gestion_user" prefHeight="55.0" prefWidth="179.0" text="Gestion  Utilisateur" />
+                  <Button fx:id="acc" layoutX="10.0" layoutY="238.0" mnemonicParsing="false" onAction="#acceuil" prefHeight="55.0" prefWidth="179.0" text="Acceuil" />
+                  <ImageView fitHeight="41.0" fitWidth="40.0" layoutX="15.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@home.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="61.0" layoutX="10.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@user.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.0876" layoutX="-7.0" orientation="VERTICAL" prefHeight="687.0" prefWidth="847.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Label id="acc" layoutX="62.0" layoutY="16.0" stylesheets="@style_1.css" text="Gestion Consultation" />
+                              <ImageView fitHeight="55.0" fitWidth="81.0" layoutX="8.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@cons.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TextField fx:id="ncin" layoutX="333.0" layoutY="75.0" prefWidth="179.0" promptText="NCIN Patient" />
+                              <Button fx:id="chercher" layoutX="535.0" layoutY="75.0" mnemonicParsing="false" onAction="#cherch_cons" text="OK" />
+                              <TableView fx:id="table" layoutX="15.0" layoutY="118.0" prefHeight="224.0" prefWidth="820.0">
+                                <columns>
+                                  <TableColumn fx:id="date_c" prefWidth="131.0" text="Date Consultation" />
+                                  <TableColumn fx:id="ordonnance" prefWidth="304.0" text="Ordonnance" />
+                                    <TableColumn fx:id="commentaire" prefWidth="391.0" text="Commentaire" />
+                                </columns>
+                              </TableView>
+                              <Label layoutX="28.0" layoutY="14.0" prefHeight="26.0" prefWidth="185.0" text="Chercher Consultation :" textFill="#1a35f0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="28.0" layoutY="360.0" prefHeight="26.0" prefWidth="185.0" text="Ajouter Consultation :" textFill="#1a35f0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="cin" layoutX="59.0" layoutY="414.0" prefHeight="25.0" prefWidth="174.0" promptText="NCIN Patient" />
+                              <DatePicker fx:id="d_cons" layoutX="59.0" layoutY="495.0" promptText="Date Consultation" />
+                              <TextArea fx:id="com" layoutX="272.0" layoutY="414.0" prefHeight="110.0" prefWidth="246.0" promptText="Commentaires" />
+                              <TextArea fx:id="ord" layoutX="552.0" layoutY="414.0" prefHeight="110.0" prefWidth="246.0" promptText="Ordonnance" />
+                              <Button fx:id="eng" layoutX="333.0" layoutY="564.0" mnemonicParsing="false" onAction="#engistrer_cons" prefHeight="25.0" prefWidth="88.0" text="Enregistrer" />
+                              <Button fx:id="ann" layoutX="464.0" layoutY="564.0" mnemonicParsing="false" onAction="#annuler_cons" prefHeight="25.0" prefWidth="88.0" text="Annuler" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

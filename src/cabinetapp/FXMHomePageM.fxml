@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1059.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cabinetapp.FXMHomePageMController">
+   <children>
+      <SplitPane dividerPositions="0.20245979186376536" layoutY="-2.0" prefHeight="687.0" prefWidth="1059.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="gc" layoutX="11.0" layoutY="332.0" mnemonicParsing="false" onAction="#gestion_consultation" prefHeight="55.0" prefWidth="179.0" text="Gestion Consultation" />
+                  <Button fx:id="gu" layoutX="10.0" layoutY="238.0" mnemonicParsing="false" onAction="#gestion_user" prefHeight="55.0" prefWidth="179.0" text="Gestion Utilisateur" />
+                  <ImageView fitHeight="48.0" fitWidth="37.0" layoutX="15.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="37.0" layoutX="15.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cons.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.0876" layoutX="-7.0" orientation="VERTICAL" prefHeight="687.0" prefWidth="847.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="23.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@home.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="acc" layoutX="84.0" layoutY="16.0" stylesheets="@style_1.css" text="Acceuil" />
+                           </children></AnchorPane>
+                      <AnchorPane id="xx" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" stylesheets="@style_1.css">
+                           <children>
+                              <Label id="bien" layoutX="101.0" layoutY="243.0" prefHeight="108.0" prefWidth="717.0" stylesheets="@style_1.css" text="Bienvenue au CabinetApp " />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
